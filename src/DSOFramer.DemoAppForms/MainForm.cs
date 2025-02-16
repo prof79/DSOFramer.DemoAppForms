@@ -38,6 +38,5 @@ namespace DSOFramer.DemoAppForms
                 this._axFramerControl.Open(openFileDialog.FileName);
             }
         }
-
     }
 }
