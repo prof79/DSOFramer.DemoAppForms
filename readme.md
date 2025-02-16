@@ -1,12 +1,15 @@
-# demo for office interop
+# DSOFramer WinForms Demo
 
-## how to use?
+This demo shows Microsoft Office interoperability/embedding in .NET WinForms using the Microsoft `DSOFramer` ActiveX sample control.
 
-- 1 first of all, running computer should has office installed.
-- 2 register dsoframer.ocx for the first time: Regsvr32 /s dsoframer.ocx	
-- 3 run Demo.WinApp.exe
+## Usage
 
-## change list
+1. Microsoft Office has to be installed.
+2. Copy `dsoframer.ocx` to `C:\Windows\SysWow64` (with administrative rights)
+3. Register `dsoframer.ocx` once (with administrative rights): `C:\Windows\SysWow64\regsvr32.exe C:\Windows\SysWow64\dsoframer.ocx`
+4. Run `DSOFramer.DemoAppForms.exe`
 
-- 
-- 20190814 init projects
+## Change List
+
+* 2025-02-16 Rework by @prof79 started
+* 2019-08-14 init projects
