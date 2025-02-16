@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{164122E5-2D51-482E-B1E0-2DD4EF67A0AB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Demo.WinApp</RootNamespace>
-    <AssemblyName>Demo.WinApp</AssemblyName>
+    <RootNamespace>DSOFramer.DemoAppForms</RootNamespace>
+    <AssemblyName>DSOFramer.DemoAppForms</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

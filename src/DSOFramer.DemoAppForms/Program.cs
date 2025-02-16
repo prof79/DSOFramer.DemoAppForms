@@ -1,8 +1,10 @@
-﻿using System;
-using System.Windows.Forms;
+﻿// Program.cs
 
-namespace Demo.WinApp
+namespace DSOFramer.DemoAppForms
 {
+    using System;
+    using System.Windows.Forms;
+
     static class Program
     {
         /// <summary>

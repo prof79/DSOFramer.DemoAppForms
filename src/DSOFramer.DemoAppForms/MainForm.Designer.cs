@@ -1,4 +1,4 @@
-﻿namespace Demo.WinApp
+﻿namespace DSOFramer.DemoAppForms
 {
     partial class MainForm
     {

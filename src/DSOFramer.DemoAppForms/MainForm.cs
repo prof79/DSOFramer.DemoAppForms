@@ -1,8 +1,10 @@
-﻿using System.Windows.Forms;
-using AxDSOFramer;
+﻿// MainForm.cs
 
-namespace Demo.WinApp
+namespace DSOFramer.DemoAppForms
 {
+    using System.Windows.Forms;
+    using AxDSOFramer;
+
     public partial class MainForm : Form
     {
         public MainForm()
