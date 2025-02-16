@@ -1,9 +1,8 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.WinApp", "Demo.WinApp\Demo.WinApp.csproj", "{164122E5-2D51-482E-B1E0-2DD4EF67A0AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSOFramer.DemoAppForms", "DSOFramer.DemoAppForms\DSOFramer.DemoAppForms.csproj", "{164122E5-2D51-482E-B1E0-2DD4EF67A0AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31F59EBC-1E02-42B8-8429-F8825F1BB99D}"
 	ProjectSection(SolutionItems) = preProject
