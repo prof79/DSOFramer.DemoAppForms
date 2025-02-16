@@ -9,13 +9,6 @@ namespace DSOFramer.DemoAppForms
     static class Program
     {
         /// <summary>
-        /// Win32 API for process-scoped DPI-awareness.
-        /// </summary>
-        /// <returns>True if successful, false otherwise.</returns>
-        [DllImport("user32.dll")]
-        private static extern bool SetProcessDPIAware();
-
-        /// <summary>
         /// The primary entry point to the application.
         /// </summary>
         [STAThread]
@@ -25,8 +18,15 @@ namespace DSOFramer.DemoAppForms
             // https://stackoverflow.com/questions/4075802/creating-a-dpi-aware-application
             if (Environment.OSVersion.Version.Major >= 6)
             {
-                // Not working and looking ugly, disable for now
-                //SetProcessDPIAware();
+                // This - from StackOverflow - doesn't work:
+                //Interop.SetProcessDPIAware();
+
+                // This works - a newer API according to MSDN, introduced in Windows 8.1,
+                // which is able to provide the same contextual info as the Microsoft Learn
+                // asmv3 manifest sample does.
+                Interop.SetProcessDpiAwareness(
+                    Interop.PROCESS_DPI_AWARENESS.PROCESS_PER_MONITOR_DPI_AWARE
+                );
             }
 
             Application.EnableVisualStyles();
