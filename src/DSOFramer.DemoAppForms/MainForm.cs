@@ -17,8 +17,10 @@ namespace DSOFramer.DemoAppForms
 
         private void MyInitializeComponent()
         {
-            //this.axFramerControl1.Dock = DockStyle.Fill;
-            _axFramerControl = new AxFramerControl { Dock = DockStyle.Fill };
+            _axFramerControl = new AxFramerControl
+            {
+                Dock = DockStyle.Fill
+            };
 
             this.splitContainer1.Panel1.Controls.Add(_axFramerControl);
 
@@ -33,8 +35,11 @@ namespace DSOFramer.DemoAppForms
         {
             var openFileDialog = new OpenFileDialog();
 
+            var documentFilter =
+                @"Microsoft Office Files|*.xls?;*.ppt?;*.pps?;*.doc?|Microsoft Excel Files|*.xls?|Microsoft PowerPoint Files|*.ppt?;*.pps?|Microsoft Word Files|*.doc?|All Files|*.*";
+
             openFileDialog.InitialDirectory = System.Environment.CurrentDirectory;
-            openFileDialog.Filter = @"Microsoft PPT Files|*.ppt|All Files|*.*";
+            openFileDialog.Filter = documentFilter;
             openFileDialog.RestoreDirectory = true;
             openFileDialog.FilterIndex = 1;
 
